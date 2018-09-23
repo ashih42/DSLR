@@ -86,7 +86,7 @@ class LogisticClassifier:
 					correct_str = Fore.RED + 'NO' + Fore.RESET
 			else:
 				correct_str = '🧙🤷'
-				assigned = '(none)    '
+				assigned = '(none)        '
 			print('%d\t\t%.2f%%\t\t%.2f%%\t\t%.2f%%\t\t%.2f%%\t\t%s\t%s\t%s' % (i,
 				house_percent[i][0] * 100, house_percent[i][1] * 100, house_percent[i][2] * 100, house_percent[i][3] * 100,
 				Fore.BLUE + predicted + Fore.RESET, Fore.MAGENTA + assigned + Fore.RESET, correct_str))
