@@ -4,7 +4,6 @@
 
 - describe.py provides additional statistical measures:
 	- variance
-	- min
 	- mode
 
 - describe.by provides statistical measures for 5 groups:
@@ -24,4 +23,6 @@
 
 - Such organization! So formatting!
 
-- I even considered implementing regularization and customizable regularization constants, but this data is already nicely partitioned by simple linear combinations of the given features, so I decided there was no need to insert additional polynomial terms from combinations of features.
+- I considered implementing regularization and customizable regularization constants, but this data is already nicely partitioned by simple linear combinations of the given features, so there is no need to insert additional polynomial terms and then apply regularization to mitigate overfitting.
+
+- I decided against stochastic gradient descent, as it would not be any more beneficial in thise case, since this dataset is small enough, and the logistic cost function is convex, guarantees one global min.

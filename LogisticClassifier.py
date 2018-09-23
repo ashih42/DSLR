@@ -56,7 +56,7 @@ class LogisticClassifier:
 		print('Saved predictions in ' + Fore.CYAN + self.__ANSWER_FILE + Fore.RESET + '\n')
 
 	def predict_data(self, filename):
-		print(Style.BRIGHT + '\nMaking predictions for data in ' + Fore.MAGENTA + filename + Fore.RESET + Style.RESET_ALL)
+		print(Style.BRIGHT + 'Making predictions for data in ' + Fore.MAGENTA + filename + Fore.RESET + Style.RESET_ALL)
 		parser = PredictionDataParser(filename, self.__mean_list)
 		sample_count = len(parser.houses)
 		Y_labeled = np.array(parser.houses)
@@ -96,7 +96,7 @@ class LogisticClassifier:
 		self.__save_answer(predictions)
 
 	def train_data(self, filename):
-		print(Style.BRIGHT + '\nTraining model for data in ' + Fore.MAGENTA + filename + Fore.RESET + Style.RESET_ALL)
+		print(Style.BRIGHT + 'Training model for data in ' + Fore.MAGENTA + filename + Fore.RESET + Style.RESET_ALL)
 		data_analyzer = DataAnalyzer(filename)
 		self.__sample_count = data_analyzer.sample_count
 		Y_labeled = data_analyzer.Y_labeled
