@@ -1,0 +1,27 @@
+- Missing fields in data?  It tells ya exactly what is missing!
+
+- Expanded many additional features from (useless) features!
+
+- describe.py provides additional statistical measures:
+	- variance
+	- min
+	- mode
+
+- describe.by provides statistical measures for 5 groups:
+	- All students
+	- Gryffindors only
+	- Hufflepuffs only
+	- Ravenclaws only
+	- Slytherins only
+
+- Optional environment variable DSLR_VERBOSE=TRUE to show you real shit is happening!
+
+- Terse but powerful vectorized operations for runtime efficiency and clean code!
+
+- Not only does it predict a house, it also tells you %-likelihood for all 4 houses for each student!
+
+- Noice UML class diagram! (Oh you did OOP stuff again WHY)
+
+- Such organization! So formatting!
+
+- I even considered implementing regularization and customizable regularization constants, but this data is already nicely partitioned by simple linear combinations of the given features, so I decided there was no need to insert additional polynomial terms from combinations of features.

@@ -1,0 +1,11 @@
+.DS_Store
+._*
+*.pdf
+__pycache__
+Histograms
+ScatterPlots
+PairPlots
+assets/houses.csv
+assets/features.txt
+assets/simple.csv
+weights.dat
