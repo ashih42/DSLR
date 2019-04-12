@@ -2,12 +2,11 @@ import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
-
 if __name__ == '__main__':
    # Load the truths
-   truths = pd.read_csv('assets/dataset_truth.csv', sep=',', index_col=0)
+   truths = pd.read_csv('data/dataset_truth.csv', sep=',', index_col=0)
    # Load predictions
-   predictions = pd.read_csv('assets/houses.csv', sep=',', index_col=0)
+   predictions = pd.read_csv('./houses.csv', sep=',', index_col=0)
    # Replace names by numerical value {0, 1, 2, 3} and convert to array
    houses = {'Gryffindor': 0, 'Hufflepuff': 1, 'Ravenclaw': 2, 'Slytherin': 3}
    y_true = truths.replace(houses).as_matrix()
