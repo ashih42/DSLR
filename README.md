@@ -2,8 +2,8 @@
 Predict the [Hogwarts House](https://harrypotter.fandom.com/wiki/Hogwarts_Houses) from a student's **academic scores** by implementing [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression) in Python. (42 Silicon Valley)
 
 <p float="left">
-  <img src="https://github.com/ashih42/DSLR/blob/master/Screenshots/histogram.png" width="280" />
-  <img src="https://github.com/ashih42/DSLR/blob/master/Screenshots/scatterplot.png" width="280" />
+  <img src="https://github.com/ashih42/DSLR/blob/master/Screenshots/histogram.png" width="300" />
+  <img src="https://github.com/ashih42/DSLR/blob/master/Screenshots/scatterplot.png" width="300" />
   <img src="https://github.com/ashih42/DSLR/blob/master/Screenshots/bad_features.png" width="200" />
 </p>
 
