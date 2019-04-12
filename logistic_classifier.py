@@ -1,7 +1,8 @@
-from DataAnalyzer import DataAnalyzer
-from PredictionDataParser import PredictionDataParser
-from WeightsParser import WeightsParser
+from data_analyzer import DataAnalyzer
+from prediction_data_parser import PredictionDataParser
+from weights_parser import WeightsParser
 from exceptions import LogisticRegressionException
+
 from colorama import Fore, Back, Style
 import numpy as np
 import math
@@ -11,7 +12,7 @@ import os
 
 class LogisticClassifier:
 	__LABELS = ['Gryffindor', 'Hufflepuff', 'Ravenclaw', 'Slytherin']
-	__ANSWER_FILE = 'assets/houses.csv'
+	__ANSWER_FILE = 'houses.csv'
 	__WEIGHTS_FILE = 'weights.dat'
 	__FEATURE_COUNT = 13
 	__ALPHA = 0.001
@@ -44,10 +45,6 @@ class LogisticClassifier:
 		print('Saved model parameters in ' + Fore.CYAN + filename + Fore.RESET + '\n')	
 
 	def __save_answer(self, predictions):
-		try:
-			os.stat('assets/')
-		except:
-			os.mkdir('assets/')
 		with open(self.__ANSWER_FILE, 'w') as answer_file:
 			answer_file.write('Index,Hogwarts House' + '\n')
 			indices = range(len(predictions))

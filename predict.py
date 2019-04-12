@@ -1,19 +1,21 @@
-# (☞ﾟヮﾟ)☞  LOGREG_TRAIN.PY
+# (☞ﾟヮﾟ)☞  predict.py data.csv weights.dat
 
-from LogisticClassifier import LogisticClassifier
+from logistic_classifier import LogisticClassifier
 from exceptions import ParserException, LogisticRegressionException
+
 from colorama import Fore, Back, Style
 import sys
 
 def main():
 	# check argv
-	if len(sys.argv) != 2:
-		print('usage: ' + Fore.RED + 'python3' + Fore.BLUE + ' logreg_train.py ' + Fore.RESET + 'data_file.csv')
+	if len(sys.argv) != 3:
+		print('usage: ' + Fore.RED + 'python3' + Fore.BLUE + ' predict.py ' + Fore.RESET + 'data_file.csv weights.dat')
 		sys.exit(-1)
 	data_file = sys.argv[1]
+	weights_file = sys.argv[2]
 	try:
-		model = LogisticClassifier()
-		model.train_data(data_file)
+		model = LogisticClassifier(weights_file)
+		model.predict_data(data_file)
 	except IOError as e:
 		print(Style.BRIGHT + Fore.RED + 'I/O Error: ' + Style.RESET_ALL + Fore.RESET + str(e))
 	except ParserException as e:
