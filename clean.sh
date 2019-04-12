@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/bin/sh
 
-rm -rf ._* Histograms ScatterPlots PairPlots weights.dat assets/houses.csv
+rm -rf ._* Histograms ScatterPlots PairPlots weights.dat houses.csv
